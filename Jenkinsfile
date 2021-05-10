@@ -30,7 +30,7 @@ pipeline {
         stage('清除旧数据+打包') {
             steps {
                 echo "开始打包"
-                sh "mvn clean package"
+                sh "npm install && npm run build:stage"
                 echo '打包成功'
             }
         }
