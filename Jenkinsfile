@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'Maven3.5.4'
-	}
-
     environment {
         TARGET_HOST_TEST = 'root@1.15.145.63'
         TARGET_DIR_SERVER = '/home/apps/ny-lottery'
